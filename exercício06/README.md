@@ -1,18 +1,23 @@
-# ✨ Exercício: Manipulação de Strings em JavaScript
+# Eventos DOM
 
-## 📖 Descrição
-Este repositório contém um exemplo simples de JavaScript que solicita ao usuário seu nome através de um prompt e exibe diversas informações sobre o nome utilizando a função `document.write`.
+## Descrição
 
-## ⚙️ Funcionalidades
-- **`window.prompt`**: Solicita ao usuário a entrada de seu nome.
-- **Manipulação de Strings**: Exibe o nome do usuário, o comprimento do nome, e o nome em maiúsculas e minúsculas.
-- **`document.write`**: Escreve as informações diretamente no documento HTML.
+Este repositório contém um exemplo prático que demonstra a utilização de eventos do DOM (Document Object Model) para interagir com elementos em uma página web. O objetivo é mostrar como manipular o conteúdo e o estilo de um elemento em resposta a diferentes eventos, como cliques e movimentos do mouse.
 
-## 📜 Código
-Aqui está o código utilizado no exercício:
+## Estrutura do Projeto
 
-```javascript
-var nome = window.prompt('Qual é o seu nome?');
-document.write(`Olá <strong>${nome}</strong>, o seu nome tem um total de <strong>${nome.length}</strong> caracteres!<br>`);
-document.write(`Seu nome em maiúsculas fica <strong>${nome.toUpperCase()}</strong><br>`);
-document.write(`Seu nome em minúsculas fica <strong>${nome.toLowerCase()}</strong>`);
+O projeto é composto por um arquivo HTML e um arquivo JavaScript. O HTML define a estrutura da página e inclui um elemento `<div>` que será manipulado pelos eventos. O JavaScript é responsável por adicionar e gerenciar os eventos do DOM associados ao elemento `<div>`.
+
+## Eventos Utilizados
+
+1. **Click (Clique)**:
+   - **Descrição**: Este evento é acionado quando o usuário clica no elemento.
+   - **Ação Realizada**: Quando o elemento é clicado, o texto dentro do elemento é alterado e a cor de fundo também muda.
+
+2. **Mouseenter (Entrada do Mouse)**:
+   - **Descrição**: Este evento é acionado quando o cursor do mouse entra na área do elemento.
+   - **Ação Realizada**: Quando o cursor entra na área do elemento, o texto dentro do elemento é alterado.
+
+3. **Mouseout (Saída do Mouse)**:
+   - **Descrição**: Este evento é acionado quando o cursor do mouse sai da área do elemento.
+   - **Ação Realizada**: Quando o cursor sai da área do elemento, o texto dentro do elemento é alterado e a cor de fundo muda novamente.
